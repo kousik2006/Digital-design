@@ -8,7 +8,7 @@ module half_subtractor_tb;
     initial clk = 1'b0;
     always #5 clk = ~clk;
 
-    half_adder dut(
+    half_subtractor dut(
         .a(a),
         .b(b),
         .diff(diff),
