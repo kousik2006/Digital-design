@@ -7,10 +7,10 @@ module half_adder(
 
 wire t1,t2,t3;
 
-nand g1(t1,a,b);
-nand g2(t2,a,t1);
-nand g3(t3,t1,b);
-nand SUM(sum,t2,t3);
-nand CARRY(carry,t1,t1);
+nor g1(t1,a,a);
+nor g2(t2,b,b);
+nor CARRY(carry,t1,t2);
+nor g3(t3,a,b);
+nor SUM(sum,t3,carry);
 
 endmodule
