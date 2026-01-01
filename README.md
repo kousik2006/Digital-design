@@ -46,28 +46,28 @@ This repository is intended to:
 
 ---
 
-### 🔹 Day 4: Logic Gates using Multiplexers
+### 🔹 Day 2: Logic Gates using Multiplexers
 - Implementing AND, OR, NOT, XOR using multiplexers  
 - Functional completeness of MUX-based logic  
 - Comparison with direct gate implementations  
 
 ---
 
-### 🔹 Day 5: Half Adder and Half Subtractor
+### 🔹 Day 3: Half Adder and Half Subtractor
 - Boolean logic implementation  
 - Truth-table verification  
 - Dedicated testbench for functional validation  
 
 ---
 
-### 🔹 Day 6: Full Adder and Full Subtractor
+### 🔹 Day 4: Full Adder and Full Subtractor
 - Structural construction using half adders  
 - Carry and borrow propagation logic  
 - Exhaustive simulation-based verification  
 
 ---
 
-### 🔹 Day 7: Universal Gate Design (NAND & NOR)
+### 🔹 Day 5: Universal Gate Design (NAND & NOR)
 - Logic implementation using **NAND-only** gates  
 - Logic implementation using **NOR-only** gates  
 - Understanding universality and logic optimization  
