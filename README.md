@@ -1,4 +1,4 @@
-# 🧠 Digital Design using Verilog (Day 1–7)
+# 🧠 Digital Design using Verilog
 
 Welcome to my **Digital Design Repository**, a structured and hands-on collection of **Verilog HDL implementations** aimed at building a **strong foundation in digital logic and RTL design**.
 
@@ -26,23 +26,20 @@ This repository is intended to:
 
 ---
 
-## 📘 Progress Overview (Completed: Day 1–7)
+## 📘 Progress Overview
 
-### 🔹 Day 1: Behavioral Modeling in Verilog
+### 🔹 Day 1: 
+#### Behavioral Modeling in Verilog
 - Continuous assignments and procedural blocks  
 - Combinational `always @(*)` blocks  
 - Synthesizable behavioral constructs  
 
----
-
-### 🔹 Day 2: Structural and Gate-Level Modeling
+#### Structural and Gate-Level Modeling
 - Hierarchical module instantiation  
 - Built-in gate primitives (`and`, `or`, `xor`, etc.)  
 - Understanding structural composition of logic  
 
----
-
-### 🔹 Day 3: Switch-Level Modeling
+#### Switch-Level Modeling
 - CMOS-based switch-level primitives  
 - Modeling pull-up and pull-down networks  
 - Relation between transistor-level and logic-level design  
