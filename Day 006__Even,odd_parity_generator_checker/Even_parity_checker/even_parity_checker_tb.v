@@ -21,7 +21,7 @@ module even_parity_checker_tb;
         parity_in = 1'b0;
         repeat(count) begin
             parity_in = ~parity_in;
-            data = $random & (1<<(N+1)-1); // random & mask to generate random N bit data sequence;
+            data = $random & ((1<<N+1)-1); // random & mask to generate random N bit data sequence;
             // $random generates 32 bit random sequence;
             // it generates (1<<(n+1)-1) :- 111.......1 (n-bit)
             // hence by and operation we get n bit random sequence
