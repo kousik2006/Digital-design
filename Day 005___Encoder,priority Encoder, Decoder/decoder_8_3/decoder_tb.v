@@ -6,7 +6,7 @@ parameter N = 3;
 wire [(1<<N)-1:0]D;
 reg enable;
 reg [N-1:0]y;
-integer i;
+integer i = 0;
 
 decoder #(.N(N)) dut (
     .D(D),
