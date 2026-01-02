@@ -6,6 +6,6 @@ module odd_parity_checker #(
     output wire error
 );
 
-    assign error = (^{data,parity_in} == 1'b0);
+    assign error = (^{data,parity_in} == 1'b0); // ~^{data,parity_in} == 1'b0
 
 endmodule
