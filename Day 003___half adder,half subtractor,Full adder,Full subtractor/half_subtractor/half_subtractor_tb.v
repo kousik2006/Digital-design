@@ -31,8 +31,4 @@ module half_subtractor_tb;
         $display ("a = %b , b = %b, diff = %b, borrow = %b",a,b,diff,borrow);
 
     end
-
-    
-
-
 endmodule

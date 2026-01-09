@@ -19,6 +19,19 @@ module mux_design_conditional (
     assign y = select ? i1 : i0;
 endmodule
 
+// mux design by if-else...........
+module mux_design_ifelse(
+    input wire i0,i1,
+    input wire select,
+    output reg y
+);   
+    
+    always @(*) begin
+        if(select) y = i1;
+        else y = i0;
+    end
+endmodule
+
 
 // or gate 
 module or_gate (
