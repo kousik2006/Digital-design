@@ -7,3 +7,10 @@ module mux_N_1 #(
 )
 assign out = Data[select]
 endmodule
+
+module mux_N2_1 #(parameter N)(
+       input reg data[15:0];
+       output wire result;
+       input select 
+)
+endmodule
