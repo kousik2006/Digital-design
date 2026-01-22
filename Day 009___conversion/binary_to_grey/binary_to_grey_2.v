@@ -11,7 +11,7 @@ genvar i;
 assign gray[N-1] = binary [N-1];
 
 generate
-    for (i=N-2; i>=0; i = i-1) begin
+    for (i=0; i<N-1; i = i + 1) begin
     assign gray[i] = binary[i] ^ binary[i+1];
     end
 endgenerate
@@ -19,12 +19,3 @@ endgenerate
 endmodule
 
 
-/* integer i;
-
-// MSB bits remain same
-assign gray[N-1] = binary [N-1];
-
-always @(*)
-    for (i=N-2; i>=0; i = i-1) begin
-    assign gray[i] = binary[i] ^ binary[i+1];
-    end */
