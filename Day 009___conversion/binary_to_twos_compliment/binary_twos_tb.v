@@ -18,7 +18,7 @@ initial begin
     $monitor("binary = %b -> 2s-compliment = %b", in, out);
 
     for (i = 0; i < (1 << P); i = i + 1) begin
-        in = i;       // ✅ drive INPUT ONLY
+        in = i;      
         #10;
     end
 

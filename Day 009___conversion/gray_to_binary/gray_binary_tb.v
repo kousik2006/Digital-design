@@ -18,7 +18,7 @@ initial begin
     $monitor("gray = %b -> binary = %b", gray, binary);
 
     for (i = 0; i < (1 << P); i = i + 1) begin
-        gray = i;       // ✅ drive INPUT ONLY
+        gray = i;      
         #10;
     end
 
