@@ -51,7 +51,4 @@ module bit_3_comparator(
         .l_out(smaller),
         .e_out(equal)
     );
-
-
-
 endmodule
