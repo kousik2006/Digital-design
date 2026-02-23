@@ -1,5 +1,5 @@
 module even_parity_checker #(
-    parameter N = 7 // data width = N+1
+    parameter N = 3 // data width = N+1
 )(
     input wire [N:0]data,
     input wire parity_in,

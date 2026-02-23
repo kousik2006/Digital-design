@@ -2,7 +2,7 @@
 
 module odd_parity_generator_tb;
 
-    parameter N = 7;
+    parameter N = 3;
     reg [N:0] data;
     wire parity_bit;
 

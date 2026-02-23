@@ -1,32 +1,37 @@
 `timescale 1ns/1ps
 
-module odd_parity_checker_tb;
+module tb_ripple_carry_adder_4bit;
 
-    parameter N = 7;
-    reg [N:0] data;
-    reg parity_in;
-    wire error;
+reg  [3:0] A;
+reg  [3:0] B;
+reg  Cin;
+wire [3:0] Sum;
+wire Cout;
 
-    integer count = 30;
+// Instantiate DUT
+ripple_carry_adder_4bit uut (
+    .A(A),
+    .B(B),
+    .Cin(Cin),
+    .Sum(Sum),
+    .Cout(Cout)
+);
 
-    odd_parity_checker #(.N(N)) dut(
-        .data(data),
-        .parity_in(parity_in),
-        .error(error)
-    );
+initial begin
+    $display(" A     B    Cin | Sum   Cout ");
+    $display("--------------------------------");
 
-    initial begin
+    A=4'b0000; B=4'b0000; Cin=0; #10;
+    A=4'b0011; B=4'b0101; Cin=0; #10;
+    A=4'b1111; B=4'b0001; Cin=0; #10;
+    A=4'b1010; B=4'b0101; Cin=1; #10;
+    A=4'b1111; B=4'b1111; Cin=1; #10;
 
-        $monitor("time = %t, Data = %b, parity_in = %b, error = %b",$time,data,parity_in,error);
-        parity_in = 1'b0;
-        repeat(count) begin
-            parity_in = ~parity_in;
-            data = $random & ((1<<(N+1))-1); // random & mask to generate random N bit data sequence;
-            // $random generates 32 bit random sequence;
-            // it generates (1<<(n+1)-1) :- 111.......1 (n-bit)
-            // hence by and operation we get n bit random sequence
-            #5;
-        end
-        $finish;
-    end
+    $finish;
+end
+
+initial begin
+    $monitor("%b  %b   %b   | %b   %b", A, B, Cin, Sum, Cout);
+end
+
 endmodule

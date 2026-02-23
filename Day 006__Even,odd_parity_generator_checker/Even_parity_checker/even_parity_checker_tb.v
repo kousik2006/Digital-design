@@ -2,7 +2,7 @@
 
 module even_parity_checker_tb;
 
-    parameter N = 7;
+    parameter N = 3;
     reg [N:0] data;
     reg parity_in;
     wire error;
