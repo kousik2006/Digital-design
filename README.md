@@ -26,54 +26,6 @@ This repository is intended to:
 
 ---
 
-## 📘 Progress Overview
-
-### 🔹 Day 1: 
-#### Behavioral Modeling in Verilog
-- Continuous assignments and procedural blocks  
-- Combinational `always @(*)` blocks  
-- Synthesizable behavioral constructs  
-
-#### Structural and Gate-Level Modeling
-- Hierarchical module instantiation  
-- Built-in gate primitives (`and`, `or`, `xor`, etc.)  
-- Understanding structural composition of logic  
-
-#### Switch-Level Modeling
-- CMOS-based switch-level primitives  
-- Modeling pull-up and pull-down networks  
-- Relation between transistor-level and logic-level design  
-
----
-
-### 🔹 Day 2: Logic Gates using Multiplexers
-- Implementing AND, OR, NOT, XOR using multiplexers  
-- Functional completeness of MUX-based logic  
-- Comparison with direct gate implementations  
-
----
-
-### 🔹 Day 3: Half Adder and Half Subtractor
-- Boolean logic implementation  
-- Truth-table verification  
-- Dedicated testbench for functional validation  
-
----
-
-### 🔹 Day 4: Full Adder and Full Subtractor
-- Structural construction using half adders  
-- Carry and borrow propagation logic  
-- Exhaustive simulation-based verification  
-
----
-
-### 🔹 Day 5: Universal Gate Design (NAND & NOR)
-- Logic implementation using **NAND-only** gates  
-- Logic implementation using **NOR-only** gates  
-- Understanding universality and logic optimization  
-
----
-
 ## 🧪 Verification Approach
 
 For every completed module:
